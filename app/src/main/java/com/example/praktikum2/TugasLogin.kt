@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
@@ -24,10 +23,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TugasLogin() {
+fun TugasLogin(
+    modifier: Modifier = Modifier
+) {
 
     Box(
-        modifier = Modifier.fillMaxSize()
+        modifier = modifier.fillMaxSize()
     ) {
 
         Image(
@@ -38,64 +39,71 @@ fun TugasLogin() {
         )
 
         Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(top = 40.dp),
+            modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
+            Spacer(
+                modifier = Modifier.height(25.dp)
+            )
+
             Text(
                 text = "Login",
-                fontSize = 28.sp,
-                fontWeight = FontWeight.Bold
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
             )
 
             Text(
                 text = "Ini adalah halaman login,",
                 fontSize = 14.sp,
-                fontWeight = FontWeight.Medium
+                fontWeight = FontWeight.Medium,
+                color = Color.White
             )
 
             Spacer(
-                modifier = Modifier.height(40.dp)
+                modifier = Modifier.height(10.dp)
             )
 
             Image(
                 painter = painterResource(id = R.drawable.logo_umy),
                 contentDescription = "Logo UMY",
-                modifier = Modifier.size(100.dp),
+                modifier = Modifier.size(180.dp),
                 contentScale = ContentScale.Fit
             )
 
             Spacer(
-                modifier = Modifier.height(40.dp)
+                modifier = Modifier.height(5.dp)
             )
 
             Text(
                 text = "Nama",
                 fontSize = 16.sp,
-                fontWeight = FontWeight.ExtraBold
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFFB71C1C)
             )
 
             Text(
                 text = "Arby Pangestu",
-                fontSize = 18.sp,
-                fontWeight = FontWeight.ExtraBold
+                fontSize = 19.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF0D47A1)
             )
 
             Text(
                 text = "20240140167",
-                fontSize = 22.sp,
-                fontWeight = FontWeight.ExtraBold
+                fontSize = 21.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
             )
 
             Spacer(
-                modifier = Modifier.height(8.dp)
+                modifier = Modifier.height(5.dp)
             )
 
             Box(
                 modifier = Modifier
-                    .size(230.dp)
+                    .size(240.dp)
                     .clip(CircleShape)
                     .background(Color(0xFFE8E8F4))
                     .border(
@@ -112,10 +120,7 @@ fun TugasLogin() {
                     contentScale = ContentScale.Crop,
                     modifier = Modifier.fillMaxSize()
                 )
-
             }
-
         }
-
     }
 }
