@@ -62,6 +62,28 @@ fun TugasLogin() {
                 contentScale = ContentScale.Fit
             )
 
+            Spacer(
+                modifier = Modifier.height(40.dp)
+            )
+
+            Text(
+                text = "Nama",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.ExtraBold
+            )
+
+            Text(
+                text = "Arby Pangestu",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.ExtraBold
+            )
+
+            Text(
+                text = "20240140167",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.ExtraBold
+            )
+
         }
 
     }
