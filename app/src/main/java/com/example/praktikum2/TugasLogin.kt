@@ -3,7 +3,9 @@ package com.example.praktikum2
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -40,6 +42,16 @@ fun TugasLogin() {
                 text = "Login",
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold
+            )
+
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Medium
+            )
+
+            Spacer(
+                modifier = Modifier.height(40.dp)
             )
 
         }
